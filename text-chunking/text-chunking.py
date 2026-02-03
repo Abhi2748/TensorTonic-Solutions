@@ -17,18 +17,3 @@ def text_chunking(tokens, chunk_size, overlap):
             break
     
     return gl
-    # step = chunk_size - overlap
-    # chunks = []
-    # i = 0
-
-    # while i < len(tokens):
-    #     chunk = list(tokens[i:i + chunk_size])
-    #     chunks.append(chunk)
-
-    #     # once we reach (or pass) the end, stop (prevents extra tiny tail chunks)
-    #     if i + chunk_size >= len(tokens):
-    #         break
-
-    #     i += step
-
-    # return chunks
