@@ -13,6 +13,6 @@ def hinge_loss(y_true, y_score, margin=1.0, reduction="mean") -> float:
     
     loss = np.maximum(0,(margin- (y_true*y_score))) 
     if reduction == "mean":
-        return float(np.mean(loss))
+        return np.mean(loss)
     elif reduction == "sum":
-        return float(np.sum(loss))
+        return np.sum(loss)
